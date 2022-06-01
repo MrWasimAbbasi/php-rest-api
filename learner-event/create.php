@@ -6,22 +6,25 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 include_once '../config/database.php';
-include_once '../class/UserRole.php';
+include_once '../class/LearnerEvent.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new UserRole($db);
+$item = new LearnerEvent($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-// User values
-$item->role_id = $data->role_id;
-$item->user_id = $data->user_id;
+$item->learner_id = $data->learner_id;
+$learner_id = $data->learner_id;
+$item->event_id = $data->event_id;
+$event_id = $data->event_id;
 
-if ($item->assignRole()) {
-    echo json_encode("Role is assigned to user.");
+// User values
+
+if ($item->createLearnerEvent()) {
+    echo json_encode("Learner with id $learner_id has joined event $event_id .");
 } else {
-    echo json_encode("Role already assigned to user");
+    echo json_encode("Something went wrong");
 }
 ?>
