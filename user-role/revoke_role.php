@@ -5,21 +5,23 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../class/Event.php';
+include_once '../../config/database.php';
+include_once '../../class/UserRole.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Event($db);
+$item = new UserRole($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-$item->id = $data->id;
+// User values
+$item->role_id = $data->role_id;
+$item->user_id = $data->user_id;
 
-if ($item->deleteEvent()) {
-    echo json_encode("Event deleted.");
+if ($item->revokeRole()) {
+    echo json_encode("Role is revoked from user.");
 } else {
-    echo json_encode("Event could not be deleted");
+    echo json_encode("something went wrong");
 }
 ?>

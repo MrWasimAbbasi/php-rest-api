@@ -5,8 +5,8 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../class/User.php';
+include_once '../../config/database.php';
+include_once '../../class/User.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -16,12 +16,10 @@ $item = new User($db);
 $data = json_decode(file_get_contents("php://input"));
 
 $item->id = $data->id;
-$item->status = 'inactive';
 
-
-if ($item->blackListUser()) {
-    echo json_encode("User is black listed.");
-} else {
-    echo json_encode("Data could not be black listed");
+if($item->deleteUser()){
+    echo json_encode("User deleted.");
+} else{
+    echo json_encode("Data could not be deleted");
 }
 ?>

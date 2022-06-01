@@ -104,6 +104,29 @@ class Event
         }
         return false;
     }
+    // UPDATE
+    public function assignMaxApplicantsToEvent()
+    {
+        $sqlQuery = "UPDATE
+                        " . $this->db_table . "
+                    SET
+                        max_participants= :max_participants
+                    WHERE 
+                        id = :id";
+
+        $stmt = $this->conn->prepare($sqlQuery);
+        $this->max_participants = htmlspecialchars(strip_tags($this->max_participants));
+        $this->id = htmlspecialchars(strip_tags($this->id));
+
+        // bind data
+        $stmt->bindParam(":max_participants", $this->max_participants);
+        $stmt->bindParam(":id", $this->id);
+
+        if ($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
 }
 
 ?>

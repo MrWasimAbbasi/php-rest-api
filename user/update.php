@@ -5,22 +5,27 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../class/Event.php';
+include_once '../../config/database.php';
+include_once '../../class/User.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Event($db);
+$item = new User($db);
 
 $data = json_decode(file_get_contents("php://input"));
-$item->title = $data->title;
-$item->description = $data->description;
-$item->max_participants = $data->max_participants;
 
-if ($item->createEvent()) {
-    echo 'Event created successfully.';
-} else {
-    echo 'Event could not be created.';
+$item->id = $data->id;
+
+// User values
+$item->name = $data->name;
+$item->email = $data->email;
+$item->status = $data->status;
+$item->created = date('Y-m-d H:i:s');
+
+if($item->updateUser()){
+    echo json_encode("User data updated.");
+} else{
+    echo json_encode("Data could not be updated");
 }
 ?>

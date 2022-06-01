@@ -5,23 +5,21 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../class/User.php';
+include_once '../../config/database.php';
+include_once '../../class/Offer.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new User($db);
+$item = new Offer($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
 $item->id = $data->id;
-$item->status = 'active';
 
-
-if ($item->blackListUser()) {
-    echo json_encode("User is white listed.");
+if ($item->deleteOffer()) {
+    echo json_encode("Offer deleted.");
 } else {
-    echo json_encode("Data could not be white listed");
+    echo json_encode("Offer could not be deleted");
 }
 ?>
