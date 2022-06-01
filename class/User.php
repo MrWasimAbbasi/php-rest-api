@@ -62,20 +62,19 @@ class User
         return false;
     }
 
-    // UPDATE
     public function getSingleUser()
     {
         $sqlQuery = "SELECT
-                        id, 
-                        name, 
-                        email, 
-                        status, 
-                        created
-                      FROM
-                        " . $this->db_table . "
-                    WHERE 
-                       id = ?
-                    LIMIT 0,1";
+        id, 
+        name, 
+        email, 
+        status, 
+        created
+        FROM
+        " . $this->db_table . "
+        WHERE 
+        id = ?
+        LIMIT 0,1";
 
         $stmt = $this->conn->prepare($sqlQuery);
 
@@ -150,6 +149,7 @@ class User
         }
         return false;
     }
+
     //White List
     public function whiteListUser()
     {

@@ -13,14 +13,14 @@ $db = $database->getConnection();
 
 $item = new User($db);
 
-$item->id = isset($_GET['id']) ? $_GET['id'] : die();
+$item->id = isset($_GET['id']) ? $_GET['id'] : die("Oh, pass id at least");
 
 $item->getSingleUser();
 
-if($item->name != null){
+if ($item->name != null) {
     // create array
     $emp_arr = array(
-        "id" =>  $item->id,
+        "id" => $item->id,
         "name" => $item->name,
         "email" => $item->email,
         "status" => $item->status,
@@ -29,9 +29,7 @@ if($item->name != null){
 
     http_response_code(200);
     echo json_encode($emp_arr);
-}
-
-else{
+} else {
     http_response_code(404);
     echo json_encode("User not found.");
 }

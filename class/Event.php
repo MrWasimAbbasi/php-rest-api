@@ -127,6 +127,34 @@ class Event
         }
         return false;
     }
+
+    public function getEvent()
+    {
+        $sqlQuery = "SELECT
+        *
+        FROM
+        " . $this->db_table . "
+        WHERE 
+        id = ?
+        LIMIT 0,1";
+
+        $stmt = $this->conn->prepare($sqlQuery);
+
+        $stmt->bindParam(1, $this->id);
+
+        $stmt->execute();
+
+        $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!empty($dataRow)) {
+            $this->id = $dataRow['id'];
+            $this->title = $dataRow['title'];
+            $this->description = $dataRow['description'];
+            $this->max_participants = $dataRow['max_participants'];
+        } else {
+            return null;
+        }
+    }
+
 }
 
 ?>

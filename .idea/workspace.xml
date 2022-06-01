@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f85a24-4f3d-4594-af62-4cafd4837488" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/class/LearnerEvent.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/learner-event/create.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/event/assign_max_applicants_to_event.php" afterPath="$PROJECT_DIR$/event/assign_max_applicants_to_event.php" />
-      <change beforePath="$PROJECT_DIR$/event/create.php" afterPath="$PROJECT_DIR$/event/create.php" />
-      <change beforePath="$PROJECT_DIR$/event/delete.php" afterPath="$PROJECT_DIR$/event/delete.php" />
-      <change beforePath="$PROJECT_DIR$/event/index.php" afterPath="$PROJECT_DIR$/event/index.php" />
-      <change beforePath="$PROJECT_DIR$/event/update.php" afterPath="$PROJECT_DIR$/event/update.php" />
-      <change beforePath="$PROJECT_DIR$/offer/create.php" afterPath="$PROJECT_DIR$/offer/create.php" />
-      <change beforePath="$PROJECT_DIR$/offer/delete.php" afterPath="$PROJECT_DIR$/offer/delete.php" />
-      <change beforePath="$PROJECT_DIR$/offer/index.php" afterPath="$PROJECT_DIR$/offer/index.php" />
-      <change beforePath="$PROJECT_DIR$/offer/update.php" afterPath="$PROJECT_DIR$/offer/update.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/assign_role.php" afterPath="$PROJECT_DIR$/user-role/assign_role.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/black_list_user.php" afterPath="$PROJECT_DIR$/user-role/black_list_user.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/revoke_role.php" afterPath="$PROJECT_DIR$/user-role/revoke_role.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/white_list_user.php" afterPath="$PROJECT_DIR$/user-role/white_list_user.php" />
-      <change beforePath="$PROJECT_DIR$/user/create.php" afterPath="$PROJECT_DIR$/user/create.php" />
-      <change beforePath="$PROJECT_DIR$/user/delete.php" afterPath="$PROJECT_DIR$/user/delete.php" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/class/Event.php" afterPath="$PROJECT_DIR$/class/Event.php" />
+      <change beforePath="$PROJECT_DIR$/class/LearnerEvent.php" afterPath="$PROJECT_DIR$/class/LearnerEvent.php" />
+      <change beforePath="$PROJECT_DIR$/class/Offer.php" afterPath="$PROJECT_DIR$/class/Offer.php" />
+      <change beforePath="$PROJECT_DIR$/class/User.php" afterPath="$PROJECT_DIR$/class/User.php" />
+      <change beforePath="$PROJECT_DIR$/event/view.php" afterPath="$PROJECT_DIR$/event/view.php" />
+      <change beforePath="$PROJECT_DIR$/offer/view.php" afterPath="$PROJECT_DIR$/offer/view.php" />
       <change beforePath="$PROJECT_DIR$/user/index.php" afterPath="$PROJECT_DIR$/user/index.php" />
-      <change beforePath="$PROJECT_DIR$/user/update.php" afterPath="$PROJECT_DIR$/user/update.php" />
       <change beforePath="$PROJECT_DIR$/user/view.php" afterPath="$PROJECT_DIR$/user/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,42 +26,131 @@
       <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learner-event/create.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LearnerEvent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/class/LearnerEvent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="92" column="9" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
               <folding>
-                <marker date="1654071504246" expanded="true" signature="388:426" ph="SELECT * FRO... ${$this-&gt;db_table}" />
-                <marker date="1654071504246" expanded="true" signature="615:793" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654091034271" expanded="true" signature="386:455" ph="SELECT id, n... ${$this-&gt;db_table}" />
+                <marker date="1654091034271" expanded="false" signature="635:885" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654091034271" expanded="true" signature="1617:1793" ph="SELECT id, n... ${$this-&gt;db_table}" />
+                <marker date="1654091034271" expanded="true" signature="4584:4632" ph="DELETE FROM ${$this-&gt;db_table}... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assign_max_applicants_to_event.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/assign_max_applicants_to_event.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="21">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="15" column="75" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/offer/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Offer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/Offer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+              <folding>
+                <marker date="1654091754566" expanded="true" signature="420:458" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+                <marker date="1654091754566" expanded="true" signature="640:948" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654091754566" expanded="true" signature="1798:1846" ph="DELETE FROM ${$this-&gt;db_table}... " />
+                <marker date="1654091754566" expanded="true" signature="3494:3603" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/event/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="27" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="154" column="9" lean-forward="true" selection-start-line="132" selection-start-column="7" selection-end-line="154" selection-end-column="9" />
+              <folding>
+                <element signature="n#listEvents#0;n#Event#0;n#!!top" expanded="false" />
+                <element signature="n#createEvent#0;n#Event#0;n#!!top" expanded="false" />
+                <element signature="e#1329#1387#0#PHP" expanded="false" />
+                <element signature="n#deleteEvent#0;n#Event#0;n#!!top" expanded="false" />
+                <element signature="e#1697#1755#0#PHP" expanded="false" />
+                <element signature="n#updateEvent#0;n#Event#0;n#!!top" expanded="false" />
+                <element signature="e#2759#2817#0#PHP" expanded="false" />
+                <element signature="n#assignMaxApplicantsToEvent#0;n#Event#0;n#!!top" expanded="false" />
+                <element signature="e#3484#3542#0#PHP" expanded="false" />
+                <marker date="1654091444168" expanded="true" signature="3630:3739" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LearnerEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/LearnerEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <marker date="1654090140768" expanded="true" signature="381:419" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+                <marker date="1654090140768" expanded="true" signature="606:684" ph="SELECT count... ${$this-&gt;db_table}" />
+                <marker date="1654090140768" expanded="true" signature="606:685" ph="SELECT count... ${$this-&gt;db_table}" />
+                <marker date="1654090140768" expanded="true" signature="1238:1416" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654090140768" expanded="true" signature="2017:2030" ph="SELECT * FRO... " />
+                <marker date="1654090140768" expanded="true" signature="2017:2031" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+                <marker date="1654090140768" expanded="true" signature="2017:2047" ph="SELECT * FRO... events" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,10 +162,12 @@
       <find>Employees</find>
       <find>users.php</find>
       <find>Employee</find>
-      <find>$employeeArr</find>
       <find>../</find>
       <find>Event</find>
       <find>../../</find>
+      <find>;;</find>
+      <find>$employeeArr</find>
+      <find>$emp_arr</find>
     </findStrings>
     <replaceStrings>
       <replace>User.php</replace>
@@ -96,6 +177,8 @@
       <replace>Offer</replace>
       <replace>../</replace>
       <replace>LearnerEvent</replace>
+      <replace>$userArr</replace>
+      <replace>$event_arr</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -104,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/api/create.php" />
         <option value="$PROJECT_DIR$/api/read.php" />
         <option value="$PROJECT_DIR$/api/single_read.php" />
@@ -116,18 +198,15 @@
         <option value="$PROJECT_DIR$/api/revoke_role.php" />
         <option value="$PROJECT_DIR$/api/assign_role.php" />
         <option value="$PROJECT_DIR$/api/black_list_user.php" />
-        <option value="$PROJECT_DIR$/class/User.php" />
         <option value="$PROJECT_DIR$/api/white_list_user.php" />
         <option value="$PROJECT_DIR$/api/create_event.php" />
         <option value="$PROJECT_DIR$/api/list_events.php" />
         <option value="$PROJECT_DIR$/api/delete_event.php" />
         <option value="$PROJECT_DIR$/api/update_event.php" />
-        <option value="$PROJECT_DIR$/class/Offer.php" />
         <option value="$PROJECT_DIR$/api/create_offer.php" />
         <option value="$PROJECT_DIR$/api/list_offers.php" />
         <option value="$PROJECT_DIR$/api/delete_offer.php" />
         <option value="$PROJECT_DIR$/api/update_offer.php" />
-        <option value="$PROJECT_DIR$/class/Event.php" />
         <option value="$PROJECT_DIR$/api/assign_max_applicants_to_event.php" />
         <option value="$PROJECT_DIR$/api/user/index.php" />
         <option value="$PROJECT_DIR$/api/user/update.php" />
@@ -148,7 +227,17 @@
         <option value="$PROJECT_DIR$/class/LearnerEvents.php" />
         <option value="$PROJECT_DIR$/event/learner_attend_event.php" />
         <option value="$PROJECT_DIR$/learner-event/create.php" />
+        <option value="$PROJECT_DIR$/event/assign_applicants.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/class/LearnerEvent.php" />
+        <option value="$PROJECT_DIR$/user/index.php" />
+        <option value="$PROJECT_DIR$/user/view.php" />
+        <option value="$PROJECT_DIR$/class/User.php" />
+        <option value="$PROJECT_DIR$/class/Event.php" />
+        <option value="$PROJECT_DIR$/event/view.php" />
+        <option value="$PROJECT_DIR$/offer/view.php" />
+        <option value="$PROJECT_DIR$/class/Offer.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -183,6 +272,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,12 +281,40 @@
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="event" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="learner-event" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="offer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,22 +363,24 @@
       <updated>1654026651436</updated>
       <workItem from="1654026658157" duration="1832000" />
       <workItem from="1654060092375" duration="9439000" />
-      <workItem from="1654070793383" duration="716000" />
+      <workItem from="1654070793383" duration="739000" />
+      <workItem from="1654073640332" duration="1046000" />
+      <workItem from="1654076100469" duration="7041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11987000" />
+    <option name="totallyTimeSpent" value="20097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -271,6 +392,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -285,74 +407,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/create.php" />
-    <entry file="file://$PROJECT_DIR$/class/employees.php" />
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/employees.php" />
-    <entry file="file://$PROJECT_DIR$/class/UserRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/user-role/revoke_role.php" />
     <entry file="file://$PROJECT_DIR$/api/user-role/assign_role.php" />
     <entry file="file://$PROJECT_DIR$/api/user-role/black_list_user.php" />
     <entry file="file://$PROJECT_DIR$/api/user-role/white_list_user.php" />
-    <entry file="file://$PROJECT_DIR$/class/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="128" column="5" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="128" selection-end-column="5" />
-          <folding>
-            <element signature="n#blackListUser#0;n#User#0;n#!!top" expanded="false" />
-            <marker date="1654065818365" expanded="true" signature="386:455" ph="SELECT id, n... ${$this-&gt;db_table}" />
-            <marker date="1654065818365" expanded="true" signature="635:885" ph="INSERT INTO ${$this-&gt;db_table}" />
-            <marker date="1654065818365" expanded="true" signature="1631:1956" ph="SELECT id, n... ${$this-&gt;db_table}" />
-            <marker date="1654065818365" expanded="true" signature="4746:4794" ph="DELETE FROM ${$this-&gt;db_table}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="101" column="63" lean-forward="false" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="63" />
-          <caret line="102" column="75" lean-forward="false" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="75" />
-          <caret line="103" column="77" lean-forward="false" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="77" />
-          <caret line="104" column="61" lean-forward="false" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="61" />
-          <caret line="105" column="61" lean-forward="false" selection-start-line="105" selection-start-column="57" selection-end-line="105" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="118" column="41" lean-forward="false" selection-start-line="118" selection-start-column="41" selection-end-line="118" selection-end-column="41" />
-          <folding>
-            <element signature="n#updateEvent#0;n#Event#0;n#!!top" expanded="false" />
-            <marker date="1654069859322" expanded="true" signature="387:425" ph="SELECT * FRO... ${$this-&gt;db_table}" />
-            <marker date="1654069859322" expanded="true" signature="607:845" ph="INSERT INTO ${$this-&gt;db_table}" />
-            <marker date="1654069859322" expanded="true" signature="1485:1533" ph="DELETE FROM ${$this-&gt;db_table}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/event/view.php" />
     <entry file="file://$PROJECT_DIR$/api/read.php" />
     <entry file="file://$PROJECT_DIR$/api/update.php" />
@@ -383,23 +441,80 @@
     <entry file="file://$PROJECT_DIR$/api/event/delete.php" />
     <entry file="file://$PROJECT_DIR$/api/user-role/create.php" />
     <entry file="file://$PROJECT_DIR$/api/event/assign_max_applicants_to_event.php" />
-    <entry file="file://$PROJECT_DIR$/user/create.php">
+    <entry file="file://$PROJECT_DIR$/event/learner_attend_event.php" />
+    <entry file="file://$PROJECT_DIR$/event/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/event/assign_max_applicants_to_event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event/learner_attend_event.php">
+    <entry file="file://$PROJECT_DIR$/event/assign_applicants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learner-event/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/LearnerEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1654090140768" expanded="true" signature="381:419" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+            <marker date="1654090140768" expanded="true" signature="606:684" ph="SELECT count... ${$this-&gt;db_table}" />
+            <marker date="1654090140768" expanded="true" signature="606:685" ph="SELECT count... ${$this-&gt;db_table}" />
+            <marker date="1654090140768" expanded="true" signature="1238:1416" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654090140768" expanded="true" signature="2017:2030" ph="SELECT * FRO... " />
+            <marker date="1654090140768" expanded="true" signature="2017:2031" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+            <marker date="1654090140768" expanded="true" signature="2017:2047" ph="SELECT * FRO... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -407,22 +522,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learner-event/create.php">
+    <entry file="file://$PROJECT_DIR$/user/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="93">
+          <caret line="15" column="75" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class/LearnerEvent.php">
+    <entry file="file://$PROJECT_DIR$/class/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="92" column="9" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
           <folding>
-            <marker date="1654071504246" expanded="true" signature="388:426" ph="SELECT * FRO... ${$this-&gt;db_table}" />
-            <marker date="1654071504246" expanded="true" signature="615:793" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654091034271" expanded="true" signature="386:455" ph="SELECT id, n... ${$this-&gt;db_table}" />
+            <marker date="1654091034271" expanded="false" signature="635:885" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654091034271" expanded="true" signature="1617:1793" ph="SELECT id, n... ${$this-&gt;db_table}" />
+            <marker date="1654091034271" expanded="true" signature="4584:4632" ph="DELETE FROM ${$this-&gt;db_table}... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="27" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="154" column="9" lean-forward="true" selection-start-line="132" selection-start-column="7" selection-end-line="154" selection-end-column="9" />
+          <folding>
+            <element signature="n#listEvents#0;n#Event#0;n#!!top" expanded="false" />
+            <element signature="n#createEvent#0;n#Event#0;n#!!top" expanded="false" />
+            <element signature="e#1329#1387#0#PHP" expanded="false" />
+            <element signature="n#deleteEvent#0;n#Event#0;n#!!top" expanded="false" />
+            <element signature="e#1697#1755#0#PHP" expanded="false" />
+            <element signature="n#updateEvent#0;n#Event#0;n#!!top" expanded="false" />
+            <element signature="e#2759#2817#0#PHP" expanded="false" />
+            <element signature="n#assignMaxApplicantsToEvent#0;n#Event#0;n#!!top" expanded="false" />
+            <element signature="e#3484#3542#0#PHP" expanded="false" />
+            <marker date="1654091444168" expanded="true" signature="3630:3739" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+          <folding>
+            <marker date="1654091754566" expanded="true" signature="420:458" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+            <marker date="1654091754566" expanded="true" signature="640:948" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654091754566" expanded="true" signature="1798:1846" ph="DELETE FROM ${$this-&gt;db_table}... " />
+            <marker date="1654091754566" expanded="true" signature="3494:3603" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

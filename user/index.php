@@ -17,9 +17,9 @@ $itemCount = $stmt->rowCount();
 
 if ($itemCount > 0) {
 
-    $employeeArr = array();
-    $employeeArr["body"] = array();
-    $employeeArr["itemCount"] = $itemCount;
+    $userArr = array();
+    $userArr["data"] = array();
+    $userArr["itemCount"] = $itemCount;
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
@@ -31,9 +31,9 @@ if ($itemCount > 0) {
             "created" => $created
         );
 
-        array_push($employeeArr["body"], $e);
+        array_push($userArr["data"], $e);
     }
-    echo json_encode($employeeArr);
+    echo json_encode($userArr);
 } else {
     echo json_encode(
         ["message" => "No record found."]

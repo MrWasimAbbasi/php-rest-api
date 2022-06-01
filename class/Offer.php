@@ -119,6 +119,35 @@ class Offer
         }
         return false;
     }
+
+    public function getOffer()
+    {
+        $sqlQuery = "SELECT
+        *
+        FROM
+        " . $this->db_table . "
+        WHERE 
+        id = ?
+        LIMIT 0,1";
+
+        $stmt = $this->conn->prepare($sqlQuery);
+
+        $stmt->bindParam(1, $this->id);
+
+        $stmt->execute();
+
+        $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!empty($dataRow)) {
+            $this->id = $dataRow['id'];
+            $this->title = $dataRow['title'];
+            $this->description = $dataRow['description'];
+            $this->requirements = $dataRow['requirements'];
+            $this->tags = $dataRow['tags'];
+            $this->type = $dataRow['type'];
+        } else {
+            return null;
+        }
+    }
 }
 
 ?>
