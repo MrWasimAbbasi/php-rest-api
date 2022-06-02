@@ -70,7 +70,7 @@ class LearnerEvent
                 return true;
             }
         } else {
-            echo "Limit reached";
+            echo "Limit reached, maximum $allowed_applicant applicants allowed";
             die;
         }
         return false;
