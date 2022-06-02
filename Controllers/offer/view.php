@@ -5,17 +5,17 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../Models/Event.php';
+include_once '../../config/database.php';
+include_once '../../Models/Offer.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Event($db);
+$item = new Offer($db);
 
 $item->id = isset($_GET['id']) ? $_GET['id'] : die("Oh, pass id at least");
 
-$item->getEvent();
+$item->getOffer();
 
 if ($item->title != null) {
     // create array
@@ -23,7 +23,9 @@ if ($item->title != null) {
         "id" => $item->id,
         "title" => $item->title,
         "description" => $item->description,
-        "max_participants" => $item->max_participants,
+        "requirements" => $item->requirements,
+        "type" => $item->type,
+        "tags" => $item->tags,
 
     );
 
@@ -31,6 +33,6 @@ if ($item->title != null) {
     echo json_encode($event_arr);
 } else {
     http_response_code(404);
-    echo json_encode("Event not found.");
+    echo json_encode("Offer not found.");
 }
 ?>

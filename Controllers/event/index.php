@@ -2,15 +2,15 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once '../config/database.php';
-include_once '../Models/Offer.php';
+include_once '../../config/database.php';
+include_once '../../Models/Event.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$items = new Offer($db);
+$items = new Event($db);
 
-$stmt = $items->listOffers();
+$stmt = $items->listEvents();
 $itemCount = $stmt->rowCount();
 
 
@@ -26,9 +26,7 @@ if ($itemCount > 0) {
             "id" => $id,
             "title" => $title,
             "description" => $description,
-            "requirements" => $requirements,
-            "type" => $type,
-            "tags" => $tags
+            "max_participants" => $max_participants,
         );
 
         array_push($eventArr["body"], $e);

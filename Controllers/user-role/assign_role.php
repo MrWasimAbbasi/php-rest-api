@@ -5,24 +5,23 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../Models/Event.php';
+include_once '../../config/database.php';
+include_once '../../Models/UserRole.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Event($db);
+$item = new UserRole($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-$item->id = $data->id;
-
 // User values
-$item->max_participants = $data->max_participants;
+$item->role_id = $data->role_id;
+$item->user_id = $data->user_id;
 
-if ($item->assignMaxApplicantsToEvent()) {
-    echo json_encode($item->max_participants . " applicants are assigned to event.");
+if ($item->assignRole()) {
+    echo json_encode("Role is assigned to user.");
 } else {
-    echo json_encode("Something went wrong");
+    echo json_encode("Role already assigned to user");
 }
 ?>

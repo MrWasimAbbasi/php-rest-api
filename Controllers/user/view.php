@@ -5,34 +5,32 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../Models/Offer.php';
+include_once '../../config/database.php';
+include_once '../../Models/User.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Offer($db);
+$item = new User($db);
 
 $item->id = isset($_GET['id']) ? $_GET['id'] : die("Oh, pass id at least");
 
-$item->getOffer();
+$item->getSingleUser();
 
-if ($item->title != null) {
+if ($item->name != null) {
     // create array
-    $event_arr = array(
+    $emp_arr = array(
         "id" => $item->id,
-        "title" => $item->title,
-        "description" => $item->description,
-        "requirements" => $item->requirements,
-        "type" => $item->type,
-        "tags" => $item->tags,
-
+        "name" => $item->name,
+        "email" => $item->email,
+        "status" => $item->status,
+        "created" => $item->created
     );
 
     http_response_code(200);
-    echo json_encode($event_arr);
+    echo json_encode($emp_arr);
 } else {
     http_response_code(404);
-    echo json_encode("Offer not found.");
+    echo json_encode("User not found.");
 }
 ?>

@@ -5,24 +5,22 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../Models/Offer.php';
+include_once '../../config/database.php';
+include_once '../../Models/Event.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$item = new Offer($db);
+$item = new Event($db);
 
 $data = json_decode(file_get_contents("php://input"));
 $item->title = $data->title;
 $item->description = $data->description;
-$item->requirements = $data->requirements;
-$item->tags = $data->tags;
-$item->type = $data->type;
+$item->max_participants = $data->max_participants;
 
-if ($item->createOffer()) {
-    echo 'Offer created successfully.';
+if ($item->createEvent()) {
+    echo 'Event created successfully.';
 } else {
-    echo 'Offer could not be created.';
+    echo 'Event could not be created.';
 }
 ?>

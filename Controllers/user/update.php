@@ -5,8 +5,8 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once '../config/database.php';
-include_once '../Models/User.php';
+include_once '../../config/database.php';
+include_once '../../Models/User.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -14,14 +14,18 @@ $db = $database->getConnection();
 $item = new User($db);
 
 $data = json_decode(file_get_contents("php://input"));
+
+$item->id = $data->id;
+
+// User values
 $item->name = $data->name;
 $item->email = $data->email;
 $item->status = $data->status;
 $item->created = date('Y-m-d H:i:s');
 
-if($item->createUser()){
-    echo 'User created successfully.';
+if($item->updateUser()){
+    echo json_encode("User data updated.");
 } else{
-    echo 'User could not be created.';
+    echo json_encode("Data could not be updated");
 }
 ?>
