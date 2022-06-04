@@ -1,48 +1,32 @@
 <?php
 
-class UserRole
+class UserRole extends Model
 {
-
-    // Connection
-    private $conn;
-
-    // Table
-    private $db_table = "user_roles";
-
-    // Columns
-    public $id;
-    public $user_id;
-    public $role_id;
-    public $status;
-
-    // Db connection
-    public function __construct($db)
+    public function __construct()
     {
-        $this->conn = $db;
+        $this->table = 'user_roles';
+        $this->getConnection();
     }
 
-
     // CREATE
-    public function assignRole()
+    public function assignRole($data)
     {
-
-
-        if (!$this->isRoleAlreadyExists()) {
+        if (!$this->isRoleAlreadyExists($data)) {
             $sqlQuery = "INSERT INTO
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         user_id = :user_id, 
                         role_id = :role_id";
 
-            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt = $this->_connection->prepare($sqlQuery);
 
             // sanitize
-            $this->user_id = htmlspecialchars(strip_tags($this->user_id));
-            $this->role_id = htmlspecialchars(strip_tags($this->role_id));
+            $data->user_id = htmlspecialchars(strip_tags($data->user_id));
+            $data->role_id = htmlspecialchars(strip_tags($data->role_id));
 
             // bind data
-            $stmt->bindParam(":user_id", $this->user_id);
-            $stmt->bindParam(":role_id", $this->role_id);
+            $stmt->bindParam(":user_id", $data->user_id);
+            $stmt->bindParam(":role_id", $data->role_id);
 
             if ($stmt->execute()) {
                 return true;
@@ -52,14 +36,14 @@ class UserRole
         }
     }
 
-    public function revokeRole()
+    public function revokeRole($data)
     {
-        $sqlQuery = "DELETE FROM " . $this->db_table . " WHERE user_id = :user_id and role_id=:role_id";
-        $stmt = $this->conn->prepare($sqlQuery);
+        $sqlQuery = "DELETE FROM " . $this->table . " WHERE user_id = :user_id and role_id=:role_id";
+        $stmt = $this->_connection->prepare($sqlQuery);
 
         // bind data
-        $stmt->bindParam(":user_id", $this->user_id);
-        $stmt->bindParam(":role_id", $this->role_id);
+        $stmt->bindParam(":user_id", $data->user_id);
+        $stmt->bindParam(":role_id", $data->role_id);
 
         if ($stmt->execute()) {
             return true;
@@ -69,14 +53,14 @@ class UserRole
 
 
     // UPDATE
-    public function isRoleAlreadyExists()
+    public function isRoleAlreadyExists($data)
     {
         $sqlQuery = "SELECT
                         id, 
                         user_id, 
                         role_id
                       FROM
-                        " . $this->db_table . "
+                        " . $this->table . "
                     WHERE 
                        user_id = :user_id
                        and
@@ -84,10 +68,10 @@ class UserRole
                     LIMIT 0,1";
 
 
-        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt = $this->_connection->prepare($sqlQuery);
 
-        $stmt->bindParam(':role_id', $this->role_id);
-        $stmt->bindParam(':user_id', $this->user_id);
+        $stmt->bindParam(':role_id', $data->role_id);
+        $stmt->bindParam(':user_id', $data->user_id);
         $stmt->execute();
         $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -99,7 +83,16 @@ class UserRole
         }
     }
 
+
+    public function find($id)
+    {
+        $sql = "SELECT * FROM " . $this->table . " WHERE `id`='" . $id . "'";
+        $query = $this->_connection->prepare($sql);
+
+        if ($query->execute()) {
+            return $query->fetch(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+        }
+    }
 }
-
-?>
-

@@ -2,33 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27f85a24-4f3d-4594-af62-4cafd4837488" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Controllers/Events.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Controllers/LearnerEvents.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Controllers/Offers.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Controllers/UserRoles.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Controllers/Users.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Controller.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Model.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/event/assign_max_applicants_to_event.php" afterPath="$PROJECT_DIR$/Controllers/event/assign_max_applicants_to_event.php" />
-      <change beforePath="$PROJECT_DIR$/event/create.php" afterPath="$PROJECT_DIR$/Controllers/event/create.php" />
-      <change beforePath="$PROJECT_DIR$/event/delete.php" afterPath="$PROJECT_DIR$/Controllers/event/delete.php" />
-      <change beforePath="$PROJECT_DIR$/event/index.php" afterPath="$PROJECT_DIR$/Controllers/event/index.php" />
-      <change beforePath="$PROJECT_DIR$/event/update.php" afterPath="$PROJECT_DIR$/Controllers/event/update.php" />
-      <change beforePath="$PROJECT_DIR$/event/view.php" afterPath="$PROJECT_DIR$/Controllers/event/view.php" />
-      <change beforePath="$PROJECT_DIR$/learner-event/create.php" afterPath="$PROJECT_DIR$/Controllers/learner-event/create.php" />
-      <change beforePath="$PROJECT_DIR$/offer/create.php" afterPath="$PROJECT_DIR$/Controllers/offer/create.php" />
-      <change beforePath="$PROJECT_DIR$/offer/delete.php" afterPath="$PROJECT_DIR$/Controllers/offer/delete.php" />
-      <change beforePath="$PROJECT_DIR$/offer/index.php" afterPath="$PROJECT_DIR$/Controllers/offer/index.php" />
-      <change beforePath="$PROJECT_DIR$/offer/update.php" afterPath="$PROJECT_DIR$/Controllers/offer/update.php" />
-      <change beforePath="$PROJECT_DIR$/offer/view.php" afterPath="$PROJECT_DIR$/Controllers/offer/view.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/assign_role.php" afterPath="$PROJECT_DIR$/Controllers/user-role/assign_role.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/black_list_user.php" afterPath="$PROJECT_DIR$/Controllers/user-role/black_list_user.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/create.php" afterPath="$PROJECT_DIR$/Controllers/user-role/create.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/delete.php" afterPath="$PROJECT_DIR$/Controllers/user-role/delete.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/index.php" afterPath="$PROJECT_DIR$/Controllers/user-role/index.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/revoke_role.php" afterPath="$PROJECT_DIR$/Controllers/user-role/revoke_role.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/update.php" afterPath="$PROJECT_DIR$/Controllers/user-role/update.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/view.php" afterPath="$PROJECT_DIR$/Controllers/user-role/view.php" />
-      <change beforePath="$PROJECT_DIR$/user-role/white_list_user.php" afterPath="$PROJECT_DIR$/Controllers/user-role/white_list_user.php" />
-      <change beforePath="$PROJECT_DIR$/user/create.php" afterPath="$PROJECT_DIR$/Controllers/user/create.php" />
-      <change beforePath="$PROJECT_DIR$/user/delete.php" afterPath="$PROJECT_DIR$/Controllers/user/delete.php" />
-      <change beforePath="$PROJECT_DIR$/user/index.php" afterPath="$PROJECT_DIR$/Controllers/user/index.php" />
-      <change beforePath="$PROJECT_DIR$/user/update.php" afterPath="$PROJECT_DIR$/Controllers/user/update.php" />
-      <change beforePath="$PROJECT_DIR$/user/view.php" afterPath="$PROJECT_DIR$/Controllers/user/view.php" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/assign_max_applicants_to_event.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/delete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/event/view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/learner-event/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/offer/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/offer/delete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/offer/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/offer/update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/offer/view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/assign_role.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/black_list_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/delete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/revoke_role.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user-role/white_list_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/delete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user/view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Models/Event.php" afterPath="$PROJECT_DIR$/Models/Event.php" />
+      <change beforePath="$PROJECT_DIR$/Models/LearnerEvent.php" afterPath="$PROJECT_DIR$/Models/LearnerEvent.php" />
+      <change beforePath="$PROJECT_DIR$/Models/Offer.php" afterPath="$PROJECT_DIR$/Models/Offer.php" />
+      <change beforePath="$PROJECT_DIR$/Models/User.php" afterPath="$PROJECT_DIR$/Models/User.php" />
+      <change beforePath="$PROJECT_DIR$/Models/UserRole.php" afterPath="$PROJECT_DIR$/Models/UserRole.php" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,83 +55,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/event/create.php">
+      <file leaf-file-name="UserRoles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/UserRoles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="254">
+              <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/event/index.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/event/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/Event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
               <folding>
-                <element signature="n#listEvents#0;n#Event#0;n#!!top" expanded="false" />
-                <element signature="n#createEvent#0;n#Event#0;n#!!top" expanded="false" />
-                <element signature="e#1329#1387#0#PHP" expanded="false" />
-                <element signature="e#1697#1755#0#PHP" expanded="false" />
-                <element signature="n#updateEvent#0;n#Event#0;n#!!top" expanded="false" />
-                <element signature="e#2759#2817#0#PHP" expanded="false" />
-                <element signature="n#assignMaxApplicantsToEvent#0;n#Event#0;n#!!top" expanded="false" />
-                <element signature="e#3484#3542#0#PHP" expanded="false" />
-                <marker date="1654091444168" expanded="true" signature="1485:1533" ph="DELETE FROM ${$this-&gt;db_table}... " />
-                <marker date="1654091444168" expanded="true" signature="3630:3739" ph="SELECT * FRO... ${$this-&gt;db_table}" />
+                <marker date="1654377398179" expanded="true" signature="206:453" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654377398179" expanded="true" signature="1150:1209" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1654377398179" expanded="true" signature="2537:2584" ph="DELETE FROM ${$this-&gt;table}... " />
+                <marker date="1654377398179" expanded="true" signature="2866:2901" ph="SELECT * FRO... ${$this-&gt;table}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/create.php">
+      <file leaf-file-name="UserRole.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/UserRole.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="1620">
+              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <folding>
+                <marker date="1654376678341" expanded="true" signature="287:455" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654376678341" expanded="true" signature="1041:1119" ph="DELETE FROM ${$this-&gt;db_table}... " />
+                <marker date="1654376678341" expanded="true" signature="1494:1858" ph="SELECT id, u... ${$this-&gt;db_table}" />
+                <marker date="1654376678341" expanded="true" signature="2277:2336" ph="SELECT * FRO... ${$this-&gt;table}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LearnerEvent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/LearnerEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+              <folding>
+                <marker date="1654377212104" expanded="true" signature="415:590" ph="INSERT INTO ${$this-&gt;db_table}" />
+                <marker date="1654377212104" expanded="true" signature="1110:1169" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1654377212104" expanded="true" signature="2497:2544" ph="DELETE FROM ${$this-&gt;table}... " />
+                <marker date="1654377212104" expanded="true" signature="2826:2861" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1654377212104" expanded="true" signature="3071:3146" ph="SELECT count... ${$this-&gt;db_table}" />
+                <marker date="1654377212104" expanded="true" signature="3528:3558" ph="SELECT * FRO... events" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/index.php">
+      <file leaf-file-name="LearnerEvents.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/LearnerEvents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/user/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="25">
+              <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+              <folding>
+                <element signature="n#index#0;n#LearnerEvents#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#LearnerEvents#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,10 +149,19 @@
       <find>$emp_arr</find>
       <find>assignRole</find>
       <find>../</find>
+      <find>Appointment</find>
+      <find>_connexion</find>
+      <find>event</find>
+      <find>$this-&gt;loadModel('Events');</find>
+      <find>findone</find>
+      <find>Offer</find>
+      <find>$this-&gt;loadModel('User');</find>
+      <find>$this-&gt;UserRole</find>
+      <find>$this-&gt;User</find>
+      <find>db_table</find>
     </findStrings>
     <replaceStrings>
       <replace>User.php</replace>
-      <replace>User</replace>
       <replace>$eventArr</replace>
       <replace>Offer</replace>
       <replace>../</replace>
@@ -145,6 +169,15 @@
       <replace>$userArr</replace>
       <replace>$event_arr</replace>
       <replace>../../</replace>
+      <replace>Event</replace>
+      <replace>table</replace>
+      <replace>_connection</replace>
+      <replace>offers</replace>
+      <replace>$this-&gt;loadModel('Event');</replace>
+      <replace>User</replace>
+      <replace>$this-&gt;loadModel('UserRole');</replace>
+      <replace>$this-&gt;UserRole</replace>
+      <replace>$this-&gt;LearnerEvent</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -153,22 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/read.php" />
-        <option value="$PROJECT_DIR$/api/single_read.php" />
-        <option value="$PROJECT_DIR$/api/update.php" />
-        <option value="$PROJECT_DIR$/class/users.php" />
-        <option value="$PROJECT_DIR$/class/assignrole.php" />
-        <option value="$PROJECT_DIR$/api/delete.php" />
-        <option value="$PROJECT_DIR$/class/AssignRole.php" />
-        <option value="$PROJECT_DIR$/api/revoke_role.php" />
-        <option value="$PROJECT_DIR$/api/assign_role.php" />
-        <option value="$PROJECT_DIR$/api/black_list_user.php" />
-        <option value="$PROJECT_DIR$/api/white_list_user.php" />
-        <option value="$PROJECT_DIR$/api/create_event.php" />
-        <option value="$PROJECT_DIR$/api/list_events.php" />
-        <option value="$PROJECT_DIR$/api/delete_event.php" />
-        <option value="$PROJECT_DIR$/api/update_event.php" />
-        <option value="$PROJECT_DIR$/api/create_offer.php" />
         <option value="$PROJECT_DIR$/api/list_offers.php" />
         <option value="$PROJECT_DIR$/api/delete_offer.php" />
         <option value="$PROJECT_DIR$/api/update_offer.php" />
@@ -204,6 +221,22 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/user/index.php" />
         <option value="$PROJECT_DIR$/Controllers/user/index.php" />
+        <option value="$PROJECT_DIR$/Controllers/EventController.php" />
+        <option value="$PROJECT_DIR$/Controllers/Event.php" />
+        <option value="$PROJECT_DIR$/Controllers/Offer.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/Model.php" />
+        <option value="$PROJECT_DIR$/app/Controller.php" />
+        <option value="$PROJECT_DIR$/Models/Event.php" />
+        <option value="$PROJECT_DIR$/Controllers/Events.php" />
+        <option value="$PROJECT_DIR$/Controllers/Offers.php" />
+        <option value="$PROJECT_DIR$/Models/Offer.php" />
+        <option value="$PROJECT_DIR$/Models/UserRole.php" />
+        <option value="$PROJECT_DIR$/Controllers/UserRoles.php" />
+        <option value="$PROJECT_DIR$/Controllers/LearnerEvents.php" />
+        <option value="$PROJECT_DIR$/Models/LearnerEvent.php" />
+        <option value="$PROJECT_DIR$/Controllers/Users.php" />
+        <option value="$PROJECT_DIR$/Models/User.php" />
       </list>
     </option>
   </component>
@@ -215,7 +248,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="675" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="699" />
     <option name="height" value="744" />
@@ -238,14 +271,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
@@ -261,6 +297,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,17 +308,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\api\Controllers" />
+      <recent name="F:\xampp\htdocs\api" />
+      <recent name="F:\xampp\htdocs\api\Models" />
+      <recent name="F:\xampp\htdocs\api\app" />
+      <recent name="F:\xampp\htdocs\api\class" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\xampp\htdocs\api\Controllers" />
       <recent name="F:\xampp\htdocs\php-rest-api\api\event" />
       <recent name="F:\xampp\htdocs\php-rest-api\api\user-role" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\api\class" />
-      <recent name="F:\xampp\htdocs\php-rest-api\api\user-role" />
-      <recent name="F:\xampp\htdocs\php-rest-api\api\user" />
-      <recent name="F:\xampp\htdocs\php-rest-api\api\offer" />
-      <recent name="F:\xampp\htdocs\php-rest-api\class" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,22 +361,21 @@
       <workItem from="1654154475462" duration="554000" />
       <workItem from="1654161788855" duration="542000" />
       <workItem from="1654166767252" duration="622000" />
+      <workItem from="1654368459950" duration="8890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25124000" />
+    <option name="totallyTimeSpent" value="34014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31240544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -350,6 +387,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -360,20 +398,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/delete.php" />
-    <entry file="file://$PROJECT_DIR$/api/create.php" />
-    <entry file="file://$PROJECT_DIR$/api/user/create.php" />
-    <entry file="file://$PROJECT_DIR$/api/user/delete.php" />
-    <entry file="file://$PROJECT_DIR$/api/user/index.php" />
-    <entry file="file://$PROJECT_DIR$/api/user/update.php" />
-    <entry file="file://$PROJECT_DIR$/api/user/view.php" />
-    <entry file="file://$PROJECT_DIR$/api/create_offer.php" />
-    <entry file="file://$PROJECT_DIR$/api/offer/create.php" />
-    <entry file="file://$PROJECT_DIR$/api/list_offers.php" />
     <entry file="file://$PROJECT_DIR$/api/offer/index.php" />
     <entry file="file://$PROJECT_DIR$/api/update_offer.php" />
     <entry file="file://$PROJECT_DIR$/api/offer/update.php" />
@@ -413,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="92" column="9" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="92" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/event/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -434,31 +457,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/learner-event/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/LearnerEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/UserRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -480,14 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -522,25 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="n#listEvents#0;n#Event#0;n#!!top" expanded="false" />
-            <element signature="n#createEvent#0;n#Event#0;n#!!top" expanded="false" />
-            <element signature="e#1329#1387#0#PHP" expanded="false" />
-            <element signature="e#1697#1755#0#PHP" expanded="false" />
-            <element signature="n#updateEvent#0;n#Event#0;n#!!top" expanded="false" />
-            <element signature="e#2759#2817#0#PHP" expanded="false" />
-            <element signature="n#assignMaxApplicantsToEvent#0;n#Event#0;n#!!top" expanded="false" />
-            <element signature="e#3484#3542#0#PHP" expanded="false" />
-            <marker date="1654091444168" expanded="true" signature="1485:1533" ph="DELETE FROM ${$this-&gt;db_table}... " />
-            <marker date="1654091444168" expanded="true" signature="3630:3739" ph="SELECT * FRO... ${$this-&gt;db_table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -569,9 +544,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/user/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="18">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <marker date="1654375078830" expanded="true" signature="713:757" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654375078830" expanded="true" signature="941:955" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654375078830" expanded="true" signature="941:974" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654375078830" expanded="true" signature="941:976" ph="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <marker date="1654375764751" expanded="true" signature="208:255" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654375764751" expanded="true" signature="208:443" ph="INSERT INTO ${$this-&gt;table}" />
+            <marker date="1654375764751" expanded="true" signature="1073:1132" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654375764751" expanded="true" signature="2384:2431" ph="DELETE FROM ${$this-&gt;table}... " />
+            <marker date="1654375764751" expanded="true" signature="2713:2748" ph="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+          <folding>
+            <element signature="n#__construct#0;n#Offer#0;n#!!top" expanded="false" />
+            <element signature="n#create#0;n#Offer#0;n#!!top" expanded="false" />
+            <element signature="n#find#0;n#Offer#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Offer#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#Offer#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Offer#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Offers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/UserRole.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <marker date="1654376678341" expanded="true" signature="287:455" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654376678341" expanded="true" signature="1041:1119" ph="DELETE FROM ${$this-&gt;db_table}... " />
+            <marker date="1654376678341" expanded="true" signature="1494:1858" ph="SELECT id, u... ${$this-&gt;db_table}" />
+            <marker date="1654376678341" expanded="true" signature="2277:2336" ph="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/LearnerEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="n#index#0;n#LearnerEvents#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#LearnerEvents#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/UserRoles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/LearnerEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="101" column="21" lean-forward="false" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+          <folding>
+            <marker date="1654377212104" expanded="true" signature="415:590" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654377212104" expanded="true" signature="1110:1169" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654377212104" expanded="true" signature="2497:2544" ph="DELETE FROM ${$this-&gt;table}... " />
+            <marker date="1654377212104" expanded="true" signature="2826:2861" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654377212104" expanded="true" signature="3071:3146" ph="SELECT count... ${$this-&gt;db_table}" />
+            <marker date="1654377212104" expanded="true" signature="3528:3558" ph="SELECT * FRO... events" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+          <folding>
+            <marker date="1654377398179" expanded="true" signature="206:453" ph="INSERT INTO ${$this-&gt;db_table}" />
+            <marker date="1654377398179" expanded="true" signature="1150:1209" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1654377398179" expanded="true" signature="2537:2584" ph="DELETE FROM ${$this-&gt;table}... " />
+            <marker date="1654377398179" expanded="true" signature="2866:2901" ph="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
         </state>
       </provider>
     </entry>

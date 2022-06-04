@@ -1,44 +1,17 @@
 <?php
 
-class Offer
+class Offer extends Model
 {
-
-    // Connection
-    private $conn;
-
-    // Table
-    private $db_table = "offers";
-
-    // Columns
-    public $id;
-    public $title;
-    public $type;
-    public $description;
-    public $tags;
-    public $requirements;
-
-
-    // Db connection
-    public function __construct($db)
+    public function __construct()
     {
-        $this->conn = $db;
+        $this->table = 'offers';
+        $this->getConnection();
     }
 
-    // GET ALL
-    public function listOffers()
-    {
-        $sqlQuery = "SELECT * FROM " . $this->db_table . "";
-        $stmt = $this->conn->prepare($sqlQuery);
-        $stmt->execute();
-        return $stmt;
-    }
-
-
-    // CREATE
-    public function createOffer()
+    public function create($data)
     {
         $sqlQuery = "INSERT INTO
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         title = :title, 
                         description = :description, 
@@ -46,36 +19,20 @@ class Offer
                         tags = :tags, 
                         type = :type";
 
-        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt = $this->_connection->prepare($sqlQuery);
 
-        $this->title = htmlspecialchars(strip_tags($this->title));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->requirements = htmlspecialchars(strip_tags($this->requirements));
-        $this->tags = htmlspecialchars(strip_tags($this->tags));
-        $this->type = htmlspecialchars(strip_tags($this->type));
+        $data->title = htmlspecialchars(strip_tags($data->title));
+        $data->description = htmlspecialchars(strip_tags($data->description));
+        $data->requirements = htmlspecialchars(strip_tags($data->requirements));
+        $data->tags = htmlspecialchars(strip_tags($data->tags));
+        $data->type = htmlspecialchars(strip_tags($data->type));
 
 
-        $stmt->bindParam(":title", $this->title);
-        $stmt->bindParam(":description", $this->description);
-        $stmt->bindParam(":requirements", $this->requirements);
-        $stmt->bindParam(":tags", $this->tags);
-        $stmt->bindParam(":type", $this->type);
-
-        if ($stmt->execute()) {
-            return true;
-        }
-        return false;
-    }
-
-    // DELETE
-    function deleteOffer()
-    {
-        $sqlQuery = "DELETE FROM " . $this->db_table . " WHERE id = ?";
-        $stmt = $this->conn->prepare($sqlQuery);
-
-        $this->id = htmlspecialchars(strip_tags($this->id));
-
-        $stmt->bindParam(1, $this->id);
+        $stmt->bindParam(":title", $data->title);
+        $stmt->bindParam(":description", $data->description);
+        $stmt->bindParam(":requirements", $data->requirements);
+        $stmt->bindParam(":tags", $data->tags);
+        $stmt->bindParam(":type", $data->type);
 
         if ($stmt->execute()) {
             return true;
@@ -83,11 +40,23 @@ class Offer
         return false;
     }
 
-    // UPDATE
-    public function updateOffer()
+    public function find($id)
     {
+        $sql = "SELECT * FROM " . $this->table . " WHERE `id`='" . $id . "'";
+        $query = $this->_connection->prepare($sql);
+
+        if ($query->execute()) {
+            return $query->fetch(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+        }
+    }
+
+    public function update($data, $id)
+    {
+
         $sqlQuery = "UPDATE
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         title= :title, 
                         description= :description, 
@@ -97,22 +66,21 @@ class Offer
                     WHERE 
                         id = :id";
 
-        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt = $this->_connection->prepare($sqlQuery);
 
-        $this->title = htmlspecialchars(strip_tags($this->title));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->requirements = htmlspecialchars(strip_tags($this->requirements));
-        $this->tags = htmlspecialchars(strip_tags($this->tags));
-        $this->type = htmlspecialchars(strip_tags($this->type));
-        $this->id = htmlspecialchars(strip_tags($this->id));
+        $data->title = htmlspecialchars(strip_tags($data->title));
+        $data->description = htmlspecialchars(strip_tags($data->description));
+        $data->requirements = htmlspecialchars(strip_tags($data->requirements));
+        $data->tags = htmlspecialchars(strip_tags($data->tags));
+        $data->type = htmlspecialchars(strip_tags($data->type));
 
         // bind data
-        $stmt->bindParam(":title", $this->title);
-        $stmt->bindParam(":description", $this->description);
-        $stmt->bindParam(":requirements", $this->requirements);
-        $stmt->bindParam(":tags", $this->tags);
-        $stmt->bindParam(":type", $this->type);
-        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":title", $data->title);
+        $stmt->bindParam(":description", $data->description);
+        $stmt->bindParam(":requirements", $data->requirements);
+        $stmt->bindParam(":tags", $data->tags);
+        $stmt->bindParam(":type", $data->type);
+        $stmt->bindParam(":id", $id);
 
         if ($stmt->execute()) {
             return true;
@@ -120,35 +88,25 @@ class Offer
         return false;
     }
 
-    public function getOffer()
+    public function delete($id)
     {
-        $sqlQuery = "SELECT
-        *
-        FROM
-        " . $this->db_table . "
-        WHERE 
-        id = ?
-        LIMIT 0,1";
-
-        $stmt = $this->conn->prepare($sqlQuery);
-
-        $stmt->bindParam(1, $this->id);
-
-        $stmt->execute();
-
-        $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
-        if (!empty($dataRow)) {
-            $this->id = $dataRow['id'];
-            $this->title = $dataRow['title'];
-            $this->description = $dataRow['description'];
-            $this->requirements = $dataRow['requirements'];
-            $this->tags = $dataRow['tags'];
-            $this->type = $dataRow['type'];
+        $query = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+        $stmt = $this->_connection->prepare($query);
+        $stmt->bindParam(':id', $id);
+        if ($stmt->execute()) {
+            return true;
         } else {
-            return null;
+            return false;
         }
     }
-}
+    // GET ALL
+    public function index()
+    {
+        $sqlQuery = "SELECT * FROM " . $this->table . "";
+        $stmt = $this->_connection->prepare($sqlQuery);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-?>
+    }
+}
 

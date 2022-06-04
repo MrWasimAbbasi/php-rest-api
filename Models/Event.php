@@ -1,72 +1,31 @@
 <?php
 
-class Event
+class Event extends Model
 {
-
-    // Connection
-    private $conn;
-
-    // Table
-    private $db_table = "events";
-
-    // Columns
-    public $id;
-    public $title;
-    public $description;
-    public $max_participants;
-
-    // Db connection
-    public function __construct($db)
+    public function __construct()
     {
-        $this->conn = $db;
+        $this->table = 'events';
+        $this->getConnection();
     }
 
-    // GET ALL
-    public function listEvents()
-    {
-        $sqlQuery = "SELECT * FROM " . $this->db_table . "";
-        $stmt = $this->conn->prepare($sqlQuery);
-        $stmt->execute();
-        return $stmt;
-    }
-
-
-    // CREATE
-    public function createEvent()
+    public function create($data)
     {
         $sqlQuery = "INSERT INTO
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         title = :title, 
                         description = :description, 
                         max_participants = :max_participants";
 
-        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt = $this->_connection->prepare($sqlQuery);
 
-        $this->title = htmlspecialchars(strip_tags($this->title));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->max_participants = htmlspecialchars(strip_tags($this->max_participants));
+        $data->title = htmlspecialchars(strip_tags($data->title));
+        $data->description = htmlspecialchars(strip_tags($data->description));
+        $data->max_participants = htmlspecialchars(strip_tags($data->max_participants));
 
-
-        $stmt->bindParam(":title", $this->title);
-        $stmt->bindParam(":description", $this->description);
-        $stmt->bindParam(":max_participants", $this->max_participants);
-
-        if ($stmt->execute()) {
-            return true;
-        }
-        return false;
-    }
-
-    // DELETE
-    function deleteEvent()
-    {
-        $sqlQuery = "DELETE FROM " . $this->db_table . " WHERE id = ?";
-        $stmt = $this->conn->prepare($sqlQuery);
-
-        $this->id = htmlspecialchars(strip_tags($this->id));
-
-        $stmt->bindParam(1, $this->id);
+        $stmt->bindParam(":title", $data->title);
+        $stmt->bindParam(":description", $data->description);
+        $stmt->bindParam(":max_participants", $data->max_participants);
 
         if ($stmt->execute()) {
             return true;
@@ -74,11 +33,26 @@ class Event
         return false;
     }
 
-    // UPDATE
-    public function updateEvent()
+    public function find($id)
     {
+        $sql = "SELECT * FROM " . $this->table . " WHERE `id`='" . $id . "'";
+
+        $query = $this->_connection->prepare($sql);
+
+        if ($query->execute()) {
+            return $query->fetch(PDO::FETCH_ASSOC);
+        } else {
+            return false;
+        }
+
+
+    }
+
+    public function update($data, $id)
+    {
+
         $sqlQuery = "UPDATE
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         title= :title, 
                         description= :description, 
@@ -86,76 +60,68 @@ class Event
                     WHERE 
                         id = :id";
 
-        $stmt = $this->conn->prepare($sqlQuery);
+        $stmt = $this->_connection->prepare($sqlQuery);
 
-        $this->title = htmlspecialchars(strip_tags($this->title));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->max_participants = htmlspecialchars(strip_tags($this->max_participants));
-        $this->id = htmlspecialchars(strip_tags($this->id));
+        $data->title = htmlspecialchars(strip_tags($data->title));
+        $data->description = htmlspecialchars(strip_tags($data->description));
+        $data->max_participants = htmlspecialchars(strip_tags($data->max_participants));
+
 
         // bind data
-        $stmt->bindParam(":title", $this->title);
-        $stmt->bindParam(":description", $this->description);
-        $stmt->bindParam(":max_participants", $this->max_participants);
-        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":title", $data->title);
+        $stmt->bindParam(":description", $data->description);
+        $stmt->bindParam(":max_participants", $data->max_participants);
+        $stmt->bindParam(":id", $id);
 
         if ($stmt->execute()) {
             return true;
         }
         return false;
     }
-    // UPDATE
-    public function assignMaxApplicantsToEvent()
+
+    public function delete($id)
+    {
+        $query = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+        $stmt = $this->_connection->prepare($query);
+        $stmt->bindParam(':id', $id);
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    // GET ALL
+    public function index()
+    {
+        $sqlQuery = "SELECT * FROM " . $this->table . "";
+        $stmt = $this->_connection->prepare($sqlQuery);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
+    public function assignMaxApplicantsToEvent($data)
     {
         $sqlQuery = "UPDATE
-                        " . $this->db_table . "
+                        " . $this->table . "
                     SET
                         max_participants= :max_participants
                     WHERE 
                         id = :id";
 
-        $stmt = $this->conn->prepare($sqlQuery);
-        $this->max_participants = htmlspecialchars(strip_tags($this->max_participants));
-        $this->id = htmlspecialchars(strip_tags($this->id));
+        $stmt = $this->_connection->prepare($sqlQuery);
+        $data->max_participants = htmlspecialchars(strip_tags($data->max_participants));
+        $data->id = htmlspecialchars(strip_tags($data->id));
 
         // bind data
-        $stmt->bindParam(":max_participants", $this->max_participants);
-        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":max_participants", $data->max_participants);
+        $stmt->bindParam(":id", $data->id);
 
         if ($stmt->execute()) {
             return true;
         }
         return false;
     }
-
-    public function getEvent()
-    {
-        $sqlQuery = "SELECT
-        *
-        FROM
-        " . $this->db_table . "
-        WHERE 
-        id = ?
-        LIMIT 0,1";
-
-        $stmt = $this->conn->prepare($sqlQuery);
-
-        $stmt->bindParam(1, $this->id);
-
-        $stmt->execute();
-
-        $dataRow = $stmt->fetch(PDO::FETCH_ASSOC);
-        if (!empty($dataRow)) {
-            $this->id = $dataRow['id'];
-            $this->title = $dataRow['title'];
-            $this->description = $dataRow['description'];
-            $this->max_participants = $dataRow['max_participants'];
-        } else {
-            return null;
-        }
-    }
-
 }
-
-?>
-
